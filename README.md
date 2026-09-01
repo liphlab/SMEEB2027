@@ -69,18 +69,19 @@ bundle3.2 install
 Then, every time you want to work on the site:
 
 ```
-bundle3.2 exec jekyll serve --baseurl ""
+./preview.sh
 ```
 
-(On this machine the command is `bundle3.2`, not plain `bundle` — that is just
-how Debian/Ubuntu names it. On other machines `bundle` may work instead.)
+and open <http://localhost:4000> in your browser once it says
+"Server running...". Leave the terminal window open; closing it (or Ctrl+C)
+stops the preview. Every time you save a change, refresh the browser to see it.
 
-and open <http://localhost:4000> in your browser. Leave it running: every time
-you save a file, refresh the browser and you see the change immediately. Press
-`Ctrl+C` to stop.
+(`preview.sh` calls `bundle3.2`, not plain `bundle` — that is just how
+Debian/Ubuntu names it on this machine. Edit the script if that differs on
+another machine.)
 
-The `--baseurl ""` is needed only locally. Online, GitHub Pages automatically
-sets the base URL to the repository name.
+Online, GitHub Pages automatically sets the base URL to the repository name,
+which is why `preview.sh` passes an empty `--baseurl` for the local preview.
 
 ---
 
