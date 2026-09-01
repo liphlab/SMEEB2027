@@ -1,0 +1,31 @@
+---
+title: Speakers
+description: Invited speakers of SMEEB 2027.
+image: /images/canal_grande_rialto.jpg
+---
+
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1 class="editable"><p></p>Invited speakers</h1>
+			<p class="subtext editable">List of confirmed invited speakers</p>
+		</div>
+	</div>
+</section>
+
+<section class="pad">
+	<div class="container">
+		{% if site.speakers.size == 0 %}
+			<p style="text-align:center">The list of invited speakers will be announced here. This page is updated as speakers confirm.</p>
+		{% endif %}
+		<ul class="staff">
+			{% for person in site.speakers %}
+				<li>
+					<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+					<div class="name"><a href={{ person.website }} target="_blank" >{{ person.name }}</a></div>
+					<div class="position">{{ person.position }}</div>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

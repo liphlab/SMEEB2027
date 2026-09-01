@@ -1,0 +1,87 @@
+# ----
+# Site
+
+title: "Stochastic Models and Experiments in Ecology and Biology"
+url: "https://liphlab.github.io/SMEEB2027"
+# NOTE: leave baseurl empty. GitHub Pages sets it automatically to /SMEEB2027
+# when the site is published from the repository of that name. For a local
+# preview, run:  bundle exec jekyll serve --baseurl ""
+baseurl:
+google_analytics_key: ""
+google_maps_javascript_api_key:
+disqus_shortname:
+
+# Values for the jekyll-seo-tag gem (http://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: "SMEEB 2027 - Stochastic Models and Experiments in Ecology and Biology. Venice, Italy, 26-28 May 2027."
+author:
+  name: SMEEB organizing committee
+  email: smeeb.conference@gmail.com
+  twitter: # twitter username without the @ symbol
+social:
+  name: #Frisco Template
+  links:
+    #- http://github.com/CloudCannon/frisco-jekyll-template
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+collections:
+  speakers:
+    _hide_content: true
+  organizers:
+    _hide_content: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      image:
+        width: 2000
+        height: 1322
+        resize_style: cover
+      bottom_image:
+        width: 2000
+        height: 1322
+        resize_style: cover
+
+# -----------
+# CloudCannon
+
+social_icons:
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - Email
+  - RSS
+
+_comments:
+  description: #Text shown when sharing on social media
+  blurb: #Short bio or description of this person

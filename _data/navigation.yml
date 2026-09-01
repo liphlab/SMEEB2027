@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: Registration
+  link: /registration/
+- name: Speakers
+  link: /speakers/
+- name: Program
+  link: /program/
+- name: Venue and logistics
+  link: /venue/
+- name: Organizers and contacts
+  link: /organizers/

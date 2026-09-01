@@ -1,0 +1,39 @@
+---
+title: Organizers and contacts
+description: Organizers and contacts for SMEEB 2027.
+image: /images/canal_grande_franchetti.jpg
+---
+
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1 class="editable"><p></p>Organizers and contacts</h1>
+		</div>
+	</div>
+</section>
+
+<section class="pad">
+	<div class="container">
+		<ul class="staff">
+			{% for person in site.organizers %}
+				<li>
+					<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+					<div class="name"><a href={{ person.website }} target="_blank" >{{ person.name }}</a></div>
+					<div class="position">{{ person.position }}</div>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+<div class="content">
+	<section class="info" id="learn-more">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Contacts</h2>
+				<p>For any further question please write to
+				<a href="mailto:smeeb.conference@gmail.com">smeeb.conference@gmail.com</a>.</p>
+			</div>
+		</div>
+	</section>
+</div>

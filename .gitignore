@@ -1,0 +1,13 @@
+# Jekyll build output and local preview state
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+Gemfile.lock
+vendor/
+.bundle/
+
+# OS junk
+.DS_Store
+Thumbs.db
