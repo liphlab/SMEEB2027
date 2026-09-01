@@ -63,14 +63,17 @@ One-time setup (needs `sudo` once, to let Ruby build its packages):
 
 ```
 sudo apt install ruby-dev build-essential zlib1g-dev
-bundle install
+bundle3.2 install
 ```
 
 Then, every time you want to work on the site:
 
 ```
-bundle exec jekyll serve --baseurl ""
+bundle3.2 exec jekyll serve --baseurl ""
 ```
+
+(On this machine the command is `bundle3.2`, not plain `bundle` — that is just
+how Debian/Ubuntu names it. On other machines `bundle` may work instead.)
 
 and open <http://localhost:4000> in your browser. Leave it running: every time
 you save a file, refresh the browser and you see the change immediately. Press
