@@ -40,6 +40,10 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+  - LICENSE
+  # local preview only: keep Jekyll out of the installed gems and its own output
+  - vendor
+  - .bundle
 
 collections:
   speakers:
