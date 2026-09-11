@@ -8,6 +8,12 @@
 		{% seo %}
 		{% feed_meta %}
 
+		{% if site.noindex %}
+		<!-- Private preview: keep the site out of Google and other search engines.
+		     Controlled by the "noindex" setting in _config.yml. -->
+		<meta name="robots" content="noindex, nofollow">
+		{% endif %}
+
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
@@ -30,8 +36,8 @@
 			<div class="container">
 				<div class="company-name">
 					<a href="{{ site.baseurl }}/">
-						<span class="dark-logo"><img width="104" height="38" src="{{ site.baseurl }}/images/logo/transparent.svg" alt="dark frisco logo"></span>
-						<span class="light-logo"><img width="104" height="38" src="{{ site.baseurl }}/images/logo/transparent.svg" alt="light frisco logo"></span>
+						<span class="dark-logo"><img width="104" height="38" src="{{ site.baseurl }}/images/logo/transparent.svg" alt="SMEEB 2027"></span>
+						<span class="light-logo"><img width="104" height="38" src="{{ site.baseurl }}/images/logo/transparent.svg" alt="SMEEB 2027"></span>
 					</a>
 				</div>
 				{% include navigation.html %}

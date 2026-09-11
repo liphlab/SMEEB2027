@@ -2,5 +2,14 @@
 layout: null
 sitemap: false
 ---
-User-agent: *
-Sitemap: {{ site.url }}/sitemap.xml
+{% if site.noindex %}# Private preview (see "noindex" in _config.yml).
+# Crawling is deliberately still allowed here: search engines have to be able to
+# fetch a page in order to read its "noindex" instruction. Blocking them with
+# "Disallow: /" would hide that instruction and the address could end up listed
+# anyway. The <meta name="robots" content="noindex"> tag on every page is what
+# actually keeps the site out of search results.
+{% endif %}User-agent: *
+Allow: /
+{% unless site.noindex %}
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
+{% endunless %}

@@ -3,10 +3,23 @@
 
 title: "Stochastic Models and Experiments in Ecology and Biology"
 url: "https://liphlab.github.io/SMEEB2027"
-# NOTE: leave baseurl empty. GitHub Pages sets it automatically to /SMEEB2027
-# when the site is published from the repository of that name. For a local
-# preview, run:  bundle exec jekyll serve --baseurl ""
-baseurl:
+repository: liphlab/SMEEB2027
+# The site lives in a subfolder of liphlab.github.io, so every internal link has
+# to start with /SMEEB2027. Do not change this. The local preview (./preview.sh)
+# overrides it with --baseurl "" so that http://localhost:4000 works as usual.
+baseurl: "/SMEEB2027"
+
+# ------------------------------------------------------------------
+# PRIVATE PREVIEW SWITCH
+# While this is true, every page tells Google & co. "do not index me", and the
+# sitemap is not advertised. The site is still reachable by anyone who has the
+# link -- GitHub Pages has no password protection -- but it will not show up in
+# search results.
+#
+# When the website is final and we want it to be found, change the line below
+# to  noindex: false  and push. That is the only change needed.
+# ------------------------------------------------------------------
+noindex: true
 google_analytics_key: ""
 google_maps_javascript_api_key:
 disqus_shortname:
@@ -16,7 +29,7 @@ logo: /siteicon.png
 description: "SMEEB 2027 - Stochastic Models and Experiments in Ecology and Biology. Venice, Italy, 26-28 May 2027."
 author:
   name: SMEEB organizing committee
-  email: smeeb.conference@gmail.com
+  email: smeeb2027@gmail.com
   twitter: # twitter username without the @ symbol
 social:
   name: #Frisco Template

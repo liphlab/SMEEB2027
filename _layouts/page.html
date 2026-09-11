@@ -9,6 +9,9 @@ layout: default
 			<p class="subtext">{{ page.description }}</p>
 		</div>
 	</div>
+	{% if page.image_credit %}
+	<p class="photo-credit">{{ page.image_credit }}</p>
+	{% endif %}
 </section>
 
 {{ content }}
