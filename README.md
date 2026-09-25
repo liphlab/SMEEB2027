@@ -1,7 +1,7 @@
 # SMEEB 2027 — conference website
 
 Website for **Stochastic Models and Experiments in Ecology and Biology**,
-Venice, Italy, 26–28 May 2027.
+Venice, Italy, 19–21 April 2027.
 
 Built with [Jekyll](https://jekyllrb.com/) (based on the CloudCannon *Frisco*
 template, carried over from the 2021 and 2024 editions) and published with
