@@ -105,3 +105,4 @@ Open items: exact venue and address, map embed, abstract submission link and
 deadline, registration link and conditions, invited speakers, program and
 abstract booklet, accommodation and restaurant lists, social dinner, and the
 final list of sponsors and funders.
+
