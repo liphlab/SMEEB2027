@@ -190,6 +190,13 @@ blockquote:before {
 	margin: 0 auto;
 }
 
+/* For institutions: show the whole logo instead of cropping it to a circle */
+.square-image.logo-image {
+	border-radius: 0;
+	background-size: contain;
+	background-position: center;
+}
+
 .page {
 	margin-bottom: 0;
 	padding-bottom: 80px;

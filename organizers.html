@@ -17,7 +17,7 @@ image: /images/canal_grande_franchetti.jpg
 		<ul class="staff">
 			{% for person in site.organizers %}
 				<li>
-					<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+					<div class="square-image{% if person.logo %} logo-image{% endif %}" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
 					<div class="name"><a href={{ person.website }} target="_blank" >{{ person.name }}</a></div>
 					<div class="position">{{ person.position }}</div>
 				</li>
