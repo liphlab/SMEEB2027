@@ -8,7 +8,7 @@ image: /images/canal_grande_rialto.jpg
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
 			<h1 class="editable"><p></p>Invited speakers</h1>
-			<p class="subtext editable">List of confirmed invited speakers</p>
+			<p class="subtext editable">List of invited speakers</p>
 		</div>
 	</div>
 	<p class="photo-credit">Grand Canal and Rialto Bridge, Venice, by <a href="https://commons.wikimedia.org/wiki/User:Palickap" target="_blank">Martin Falbisoner</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
@@ -22,9 +22,14 @@ image: /images/canal_grande_rialto.jpg
 		<ul class="staff">
 			{% for person in site.speakers %}
 				<li>
+					{% if person.image_path and person.image_path != "" %}
 					<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+					{% else %}
+					<div class="square-image no-photo"></div>
+					{% endif %}
 					<div class="name">{% if person.website %}<a href="{{ person.website }}" target="_blank">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}</div>
 					<div class="position">{{ person.position }}</div>
+					{% if person.tbc %}<div class="position tbc">(to be confirmed)</div>{% endif %}
 				</li>
 			{% endfor %}
 		</ul>
