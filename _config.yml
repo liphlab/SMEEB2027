@@ -2,7 +2,7 @@
 # Site
 
 title: "Stochastic Models and Experiments in Ecology and Biology"
-url: "https://liphlab.github.io/SMEEB2027"
+url: "https://liphlab.github.io"
 repository: liphlab/SMEEB2027
 # The site lives in a subfolder of liphlab.github.io, so every internal link has
 # to start with /SMEEB2027. Do not change this. The local preview (./preview.sh)
@@ -16,10 +16,10 @@ baseurl: "/SMEEB2027"
 # link -- GitHub Pages has no password protection -- but it will not show up in
 # search results.
 #
-# When the website is final and we want it to be found, change the line below
-# to  noindex: false  and push. That is the only change needed.
+# Set to false on 2026-11-23: the site is now public and findable. To hide it
+# from search engines again, set it back to  noindex: true  and push.
 # ------------------------------------------------------------------
-noindex: true
+noindex: false
 google_analytics_key: ""
 google_maps_javascript_api_key:
 disqus_shortname:
